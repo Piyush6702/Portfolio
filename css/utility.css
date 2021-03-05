@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Mulish:wght@300&family=Open+Sans&family=Poppins:wght@300&display=swap");
+
+:root {
+  --font1: "Comfortaa", cursive;
+  --font2: "Montserrat", sans-serif;
+  --font3: "Mulish", sans-serif;
+  --font4: "Open Sans", sans-serif;
+  --font5: "Poppins", sans-serif;
+
+  /* colors */
+
+  --grey-color:#797D7F;
+  --brown-color:#bd5d38;
+}
+
+
+.not-active{
+    display: none !important;
+}
+
+.nav.navslide{
+    
+}
+
+.btn{
+    width: 120px;
+    background-color:rgb(255, 210, 61);
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px  10px;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+a.hover:hover{
+    color: black;
+    text-shadow: 1px 1px 10px rgb(170, 170, 170),-1px -1px 10px rgb(226, 241, 84);
+}
+.btn:hover{
+    box-shadow: 1px 1px 10px rgb(139, 155, 1),-1px -1px 10px rgb(226, 241, 84);
+}
+
+.circle{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color:rgb(133, 71, 71);
+    border-radius: 50%;
+    margin: 0px;
+    border: 2px solid beige;
+    left: -1px;
+    top: 0px;
+    transition: top 1s ease;
+}
+
+.line{
+    top: 0px;
+    height: 0px;
+    width: 6px;
+    margin:0px 9.5px;
+    background-color: rgb(255, 203, 143);
+    border-radius: 10px;
+}

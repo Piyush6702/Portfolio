@@ -1,0 +1,1318 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+  padding: 0px;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0px;
+  padding-left: 280px;
+}
+
+.nav {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(24, 24, 24);
+  padding: 30px 20px;
+  overflow: hidden;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.nav .open-nav, .nav .close-nav{
+  display: none;
+}
+.navside {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myimage img {
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgb(255, 200, 47);
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  /* text-align: center; */
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.nav-list .list-items {
+  margin: 6px auto;
+  /* text-align: center; */
+  padding: 5px 10px;
+  font-size: 24px;
+  font-family: var(--font2);
+}
+
+.nav-list .list-items a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--brown-color);
+}
+
+.nav-list .list-items a:hover {
+  text-shadow: 1px 1px 1px rgb(255, 255, 255), -1px -1px 1px rgb(255, 255, 255);
+  color: rgb(253, 186, 0);
+}
+
+.hero {
+  position: relative;
+  background-image: url("../images/bg-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  margin: 0vw;
+  padding: 40px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.637);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#about {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  z-index: 10;
+  /* overflow: hidden; */
+  padding: 0px 10px;
+}
+
+#about .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  /* align-items: center; */
+}
+
+.details h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  font-family: var(--font2);
+  letter-spacing: 2px;
+  color: rgb(253, 231, 231);
+}
+
+.details .address-mail {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content:space-around; */
+  color: rgb(223, 221, 146);
+  font-size: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+  font-family: var(--font3);
+  margin: 0px 0px 40px;
+  /* opacity: 0;
+  transition: opacity 1s ease ; */
+}
+
+.address-mail p {
+  margin: 5px 0px;
+  margin-right: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.address-mail p:last-child {
+  margin-right: 0px;
+}
+
+.address-mail p i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.address-mail p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-text p {
+  font-size: 20px;
+  font-family: var(--font5);
+  color: antiquewhite;
+  text-align: justify;
+  margin: 10px 0px;
+  width: 85%;
+  /* margin-right: 5vw; */
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.social-icons {
+  margin: 30px 0px;
+  display: flex;
+}
+
+.social-icons a {
+  margin-right: 40px;
+}
+
+.social-icons a i {
+  font-size: 40px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.social-icons button a {
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: var(--font5);
+  letter-spacing: 2px;
+}
+
+#Education {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgba(192, 192, 192, 0);
+  padding: 0px 5px;
+}
+
+#Education h1,
+#Projects h1,
+#Certification h1,
+#Testimonials h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-family: var(--font4);
+  color: coral;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.progressbar {
+  position: relative;
+  /* margin-top: 30px; */
+  top: 25px;
+}
+
+.edu-active #circle-1 {
+  position: absolute;
+  top: -3px;
+  border: 2px solid beige;
+  background-color: rgb(185, 113, 113);
+  transform: scale(0.85);
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+}
+
+.edu-active #circle-2 {
+  position: absolute;
+  /* top: 110px; */
+}
+.edu-active #circle-3 {
+  position: absolute;
+  /* top: 230px; */
+}
+
+.edu-details {
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  width: 90%;
+  padding: 0px;
+}
+
+.college,
+.inter,
+.highschool {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 130px;
+  height: auto;
+  flex-wrap: wrap;
+  /* margin-top: 5px; */
+  padding-top: 0px;
+  /* margin-bottom: 10px; */
+  /* padding-bottom: 10px; */
+  /* background-color: rgba(96, 112, 112, 0.151); */
+  transform: translateX(110%);
+  transition: transform 1s ease-in-out;
+}
+
+.edu-active {
+  transform: translateX(0%);
+}
+
+.identity {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.identity p {
+  margin: 0px;
+  line-height: 25px;
+}
+
+.identity .name {
+  font-size: 18px;
+  font-family: var(--font1);
+  font-weight: bold;
+  color: rgb(255, 176, 147);
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+}
+
+.identity .degree {
+  font-size: 17px;
+  font-family: var(--font3);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.identity .grades {
+  font-size: 15px;
+  font-family: var(--font2);
+  color: rgb(218, 218, 218);
+  /* text-transform: none; */
+}
+
+.duration {
+  align-self: flex-start;
+  height: 100%;
+  font-size: 16px;
+  margin-top: 0px;
+  font-family: var(--font5);
+  color: antiquewhite;
+}
+
+#Skills {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  z-index: 10;
+  overflow: hidden;
+  padding: 0px 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  /* background-color: rgba(0, 255, 255, 0.075); */
+}
+
+#Skills h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-family: var(--font4);
+  color: coral;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.tools,
+.tech-skills,
+.soft-skills {
+  margin: 10px 0px 20px;
+}
+
+.tools h3,
+.tech-skills h3,
+.soft-skills h3 {
+  font-size: 20px;
+  font-family: var(--font2);
+  margin-bottom: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+.tools .skills-icons i {
+  font-size: 45px;
+  color: rgb(231, 231, 231);
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.skills-icons i:hover {
+  text-shadow: 1px 1px 10px rgb(170, 170, 170), -1px -1px 10px rgb(226, 241, 84);
+}
+
+.tech-skills p,
+.soft-skills p {
+  font-size: 16px;
+  font-family: var(--font3);
+  margin: 10px;
+  letter-spacing: 1.3px;
+  color: rgb(191, 255, 234);
+}
+.tech-skills p i,
+.soft-skills p i {
+  margin-right: 8px;
+  color: azure;
+  font-size: 16px;
+}
+
+.soft-skills p {
+  font-size: 18px;
+}
+
+#Projects {
+  position: relative;
+  width: 85%;
+  min-height: 100vh;
+  height: auto;
+  margin: auto;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgba(192, 192, 192, 0);
+  padding: 0px 5px;
+}
+
+.projects.slidein {
+  transform: translateX(0%);
+}
+
+#Projects h1 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-150%);
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project {
+  position: relative;
+  margin: 20px 0px;
+}
+
+.project .pname,
+.Academics h3,
+#Testimonials h3 {
+  font-size: 24px;
+  color: antiquewhite;
+  text-transform: uppercase;
+  font-family: var(--font2);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 5px rgb(46, 13, 1);
+}
+.project .pstack {
+  font-size: 16px;
+  font-family: var(--font3);
+  color: rgb(255, 218, 218);
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.pdetails {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.pdetails p {
+  min-width: 200px;
+  margin: 5px 0px;
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: var(--font4);
+  color: rgb(238, 238, 238);
+  transition: all 0.5s linear;
+}
+
+.pdetails p:hover {
+  color: aquamarine;
+  transform: translateX(10px);
+}
+
+.pdetails p i {
+  margin-right: 6px;
+}
+
+.project a {
+  text-decoration: none;
+  color: rgb(255, 152, 134);
+  font-family: var(--font5);
+  font-weight: bold;
+  transition: font-size 0.5s ease;
+}
+
+.project a:hover {
+  font-size: 18px;
+}
+
+.project .techs {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: rgb(198, 255, 142);
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-family: var(--font3);
+}
+
+#Certification {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  z-index: 10;
+  overflow: hidden;
+  /* background-color: rgb(192, 192, 192); */
+  padding: 0px 5px;
+}
+
+.Academics .subjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 10px;
+}
+
+.Academics h3 {
+  margin-bottom: 15px;
+}
+
+.subjects .sub {
+  background-color: rgb(228, 165, 128);
+  padding: 5px 15px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: var(--font4);
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.5px;
+}
+
+.moocs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.moocs h3 {
+  font-size: 24px;
+  color: rgb(255, 251, 251);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-family: var(--font1);
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.online-course {
+  margin: 10px 0px;
+}
+.online-course .ctitle {
+  font-size: 22px;
+  font-family: var(--font4);
+  color: rgb(187, 255, 232);
+  letter-spacing: 0.5px;
+}
+
+.online-course .org {
+  font-size: 16px;
+  font-family: var(--font5);
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.online-course .result {
+  font-size: 20px;
+  font-family: var(--font5);
+  color: rgb(253, 255, 115);
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.online-course .result .certi {
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-left: 100px;
+  background-color: rgb(219, 219, 219);
+  color: rgb(75, 70, 0);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.online-course .result a:hover {
+  background-color: seagreen;
+  color: white;
+}
+
+#Testimonials {
+  position: relative;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  z-index: 10;
+  overflow: hidden;
+  /* background-color: rgb(192, 192, 192); */
+  padding: 0px 5px;
+}
+
+#Testimonials .co-activity h3 {
+  margin-bottom: 30px;
+}
+
+.co-text {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-family: var(--font2);
+  text-transform: uppercase;
+  margin: 10px 0px;
+  /* font-weight: bold; */
+  letter-spacing: 1.3px;
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.co-text i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: coral;
+}
+
+#Testimonials h3:nth-child(3) {
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* ======================================== */
+.progressbar2 {
+  width: 90%;
+  height: 4px;
+  margin: 0px 2px;
+  margin-left: 20px;
+  background-color: rgb(255, 194, 62);
+  border-radius: 5px;
+  animation: progress 9s linear infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    transform-origin: left;
+  }
+}
+
+.fa-quote {
+  font-size: 16px;
+  position: absolute;
+  top: 30px;
+  margin: 3px;
+  color: rgb(255, 242, 240);
+}
+
+.fa-quote-left.fa-quote {
+  left: 20px;
+}
+
+.fa-quote-right.fa-quote {
+  right: 20px;
+}
+.testmonial-container {
+  position: relative;
+  background-color: rgb(21 16 9 / 57%);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  border: 2px solid rgb(0, 0, 0);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px rgb(68, 21, 21), -1px -2px 5px rgb(19, 18, 18);
+}
+
+.testmonial-container .user-details img {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+
+  border-radius: 50%;
+}
+
+.testmonial .text {
+  margin: 20px;
+  text-align: justify;
+  color: rgb(231, 231, 231);
+  font-family: var(--font2);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.user-details {
+  display: flex;
+  /* border: 1px solid; */
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.user-details .user-profile {
+  padding: 5px;
+  margin-left: 10px;
+}
+.user-details h2 {
+  margin: 3px 0px;
+  font-size: 20px;
+  color: bisque;
+  font-family: var(--font1);
+  letter-spacing: 2px;
+}
+
+.user-details p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(255, 210, 210);
+  font-family: var(--font3);
+  letter-spacing: 2px;
+}
+
+footer {
+  position: absolute;
+  bottom: 3px;
+  /* background-color: rgb(216, 216, 216); */
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: var(--font3);
+  font-weight: bold;
+  color: rgb(255, 153, 153);
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 5px rgb(14, 18, 20);
+}
+
+/* ==========Media Queries=============== */
+
+@media screen and (max-width: 1300px) {
+  .project:nth-child(3) .techs {
+    position: relative;
+    margin-left: 20px;
+    color: rgb(198, 255, 142);
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .pdetails p {
+    margin: 3px 0px;
+    font-size: 14px;
+  }
+
+  #Projects h1 {
+    margin-bottom: 10px;
+  }
+
+  .project {
+    position: relative;
+    margin: 10px 0px;
+  }
+
+  .college,
+  .inter,
+  .highschool {
+    min-height: 0px;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    position: fixed;
+    width: 200px;
+    padding: 20px;
+  }
+  .myimage img {
+    width: 120px;
+  }
+
+  .nav-list .list-items {
+    margin: 6px auto;
+    /* text-align: center; */
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: var(--font2);
+  }
+  body {
+    display: block;
+    padding: 0px;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0px;
+    padding-left: 200px;
+  }
+
+  .identity .name {
+    font-size: 16px;
+    font-family: var(--font1);
+    font-weight: bold;
+    color: rgb(255, 176, 147);
+    text-shadow: 1px 1px 5px rgb(0 0 0);
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+  }
+
+  .identity .degree {
+    font-size: 14px;
+  }
+
+  .testmonial-container {
+    padding: 10px 20px;
+    margin: 30px auto;
+    max-width: 70%;
+  }
+
+  .fa-quote-left.fa-quote {
+    left: 10px;
+  }
+
+  .fa-quote-right.fa-quote {
+    right: 10px;
+  }
+
+  .testmonial .text {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project .techs {
+    position: relative;
+    margin-left: 20px;
+    color: rgb(198, 255, 142);
+  }
+
+  .co-text {
+    font-size: 14px;
+  }
+
+  #Education h1,
+  #Projects h1,
+  #Certification h1,
+  #Testimonials h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-family: var(--font4);
+    color: coral;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* .edu-details {
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    width: 80%;
+    padding: 0px;
+  } */
+  #Education,
+  #Projects,
+  #Certification,
+  #Testimonials,
+  #About {
+    width: 90%;
+    padding: 0px 20px;
+  }
+
+  .details h1 {
+    font-size: 40px;
+  }
+
+  #Certification {
+    padding: 0px;
+    width: 85%;
+  }
+
+  .edu-details {
+    position: absolute;
+    top: 110px;
+    left: 70px;
+    width: 80%;
+    margin-left: 10px;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 769px) {
+  .nav .nav-list {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    /* text-align: center; */
+    flex-direction: column;
+    margin: 20px auto;
+    transform: translateY(-120%);
+    transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 5.55);
+}
+
+.nav.navslide .nav-list{
+  transform: translateY(0%);
+}
+
+
+
+
+  .nav .open-nav ,.nav.navslide .close-nav{
+    display: block !important;
+  }
+
+  .nav.navslide .open-nav{
+    display: none !important;
+  }
+
+  .open-nav {
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+    border: none;
+    right:  30px;
+    background-color: transparent;
+    transition: transform 0.5s ease;
+  }
+
+  .nav.navslide .close-nav {
+    position: absolute;
+    top: 10px;
+    z-index: 1001;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.5s ease;
+    right: 30px;
+    left: none;
+  }
+
+  .nav.navslide .navside {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+
+  .open-btn,
+  .close-btn {
+    font-size: 30px;
+
+    color: rgb(255, 255, 255);
+  }
+
+  .open-nav:focus,
+  .close-nav:focus {
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  .nav.navslide {
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+    padding: 30px 20px;
+    overflow: hidden;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+  }
+
+  .nav{
+    /* display: ; */
+    position: fixed;
+    width: 0px;
+    padding: 0;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav-list .list-items {
+    margin: 6px auto;
+    /* text-align: center; */
+    padding: 5px 10px;
+    font-size: 30px;
+    font-family: var(--font2);
+  }
+  body {
+    width: 100%;
+    padding: 0px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 10px;
+    /* background-color: rgb(216, 216, 216); */
+    width: 100%;
+  }
+
+  .college,
+  .inter,
+  .highschool {
+    min-height: 100px;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  #Education,
+  #Projects,
+  #Certification,
+  #Testimonials,
+  #about,
+  #Skills {
+    width: auto;
+    padding: 0px;
+    padding-left: 40px;
+    margin: auto;
+    min-height: 100vh;
+    height: max-content;
+  }
+
+  #about {
+    margin: 0px;
+    top: 0px;
+    padding: 20px 0px;
+    padding-left: 25px;
+  }
+
+  .hero {
+    padding: 0px;
+    margin: 0px;
+    /* top: px; */
+  }
+
+  .Academics .subjects {
+    justify-content: flex-start;
+  }
+  .subjects .sub {
+    margin: 10px;
+  }
+
+  .project {
+    position: relative;
+    margin: 15px 0px;
+  }
+
+  .pdetails {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .pdetails p {
+    min-width: 150px;
+    margin-right: 10px;
+  }
+
+  .project .techs {
+    position: absolute;
+    margin-left: 20px;
+    color: rgb(198, 255, 142);
+  }
+  .testmonial-container {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .testmonial .text {
+    margin: 15px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .user-details {
+    display: flex;
+    /* border: 1px solid; */
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+  }
+
+  .co-text {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: var(--font2);
+    text-transform: uppercase;
+    margin: 10px 0px;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  }
+}
+@media screen and (max-width: 546px) {
+  .details h1 {
+    font-size: 30px;
+  }
+  #about .details {
+    margin-top: 100px;
+  }
+  .details .address-mail {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+    color: rgb(223, 221, 146);
+    font-size: 13px;
+    width: 80%;
+    flex-wrap: wrap;
+    font-family: var(--font3);
+    margin: 0px 0px 20px;
+  }
+  .project .techs {
+    position: relative;
+    margin-left: 20px;
+    color: rgb(198, 255, 142);
+  }
+
+  .about-text p {
+    font-size: 16px;
+    font-family: var(--font5);
+    color: antiquewhite;
+    text-align: justify;
+    margin: 10px 0px;
+    width: 80%;
+    /* margin-right: 5vw; */
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  .online-course .result .certi {
+    font-size: 14px;
+
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .nav.navslide {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+    padding: 30px 20px;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+  }
+
+  .nav.navslide .close-nav {
+    
+    right: 60px;
+    left: none;
+  }
+  .social-icons {
+    margin: 30px 0px;
+    display: flex;
+  }
+
+  .tools .skills-icons i {
+    font-size: 35px;
+    color: rgb(231, 231, 231);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  /* .social-icons a {
+    margin-right: 25px;
+    font-size: 20px;
+
+} */
+  .details h1 {
+    font-size: 30px;
+    letter-spacing: 0.4px;
+  }
+  #Projects h1 {
+    margin-top: 30px;
+  }
+  .identity .name {
+    font-size: 14px;
+  }
+
+  #Education,
+  #Projects,
+  #Certification,
+  #Testimonials,
+  #about,
+  #Skills {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    font-family: var(--font5);
+    color: antiquewhite;
+    text-align: justify;
+    margin: 20px 0px;
+    width: 90%;
+    /* margin-right: 5vw; */
+    line-height: 23px;
+  }
+
+  .project .pname,
+  .Academics h3,
+  #Testimonials h3 {
+    font-size: 20px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-family: var(--font2);
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 5px rgb(46 13 1);
+  }
+
+  .tools h3,
+  .tech-skills h3,
+  .soft-skills h3 {
+    font-size: 18px;
+    font-family: var(--font2);
+    margin-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+
+  #Skills h1 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-family: var(--font4);
+    color: coral;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .edu-details {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .testmonial-container {
+    max-width: 90%;
+  }
+
+  .testmonial .text {
+    margin: 15px 20px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+  }
+  .user-details h2 {
+    margin: 3px 0px;
+    font-size: 16px;
+    color: bisque;
+    font-family: var(--font1);
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  .nav-list .list-items {
+    margin: 6px auto;
+    /* text-align: center; */
+    padding: 5px 10px;
+    font-size: 24px;
+    font-family: var(--font2);
+}
+  .subjects .sub {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .online-course .ctitle {
+    font-size: 18px;
+    font-family: var(--font4);
+    color: rgb(187, 255, 232);
+    letter-spacing: 0.5px;
+  }
+  .online-course .result .certi {
+    font-size: 10px;
+    margin-left: 30px;
+
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+  .online-course .result {
+    font-size: 16px;
+    font-family: var(--font5);
+    color: rgb(253, 255, 115);
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+
+  #Education h1,
+  #Projects h1,
+  #Certification h1,
+  #Testimonials h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: var(--font4);
+    color: coral;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
