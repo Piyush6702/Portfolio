@@ -71,18 +71,18 @@ education.addEventListener('mouseover', function (){
   line.style.height=collegediv.offsetHeight+interdiv.offsetHeight+highsdiv.offsetHeight+'px'
 });
 
-education.addEventListener('mouseout', function (){
-    let progressbar=document.querySelector('.progressbar').classList.remove("edu-active");
-    let collegediv=document.querySelector(".college").classList.remove("edu-active");
-    let interdiv=document.querySelector(".inter").classList.remove("edu-active");
-    let highsdiv=document.querySelector(".highschool").classList.remove("edu-active");
-  });
+// education.addEventListener('mouseout', function (){
+//     let progressbar=document.querySelector('.progressbar').classList.remove("edu-active");
+//     let collegediv=document.querySelector(".college").classList.remove("edu-active");
+//     let interdiv=document.querySelector(".inter").classList.remove("edu-active");
+//     let highsdiv=document.querySelector(".highschool").classList.remove("edu-active");
+//   });
 
 
 
   // =============Testimonial===========
 
-  let testmonial = document.querySelector(".testmonial .text");
+let testmonial = document.querySelector(".testmonial .text");
 let userimg = document.querySelector(".user-details img");
 let username = document.querySelector(".user-name");
 let userrole = document.querySelector(".user-role");
@@ -137,9 +137,9 @@ skills.addEventListener('mouseover',()=>{
   skills.style.opacity='1'
 })
 
-skills.addEventListener('mouseout',()=>{
-  skills.style.opacity='0'
-})
+// skills.addEventListener('mouseout',()=>{
+//   skills.style.opacity='0'
+// })
 
 
 let projectdiv=document.getElementById('Projects')
@@ -151,7 +151,7 @@ projectdiv.addEventListener('mouseover', function (){
   projects.classList.add('slidein')
 })
 
-projectdiv.addEventListener('mouseout', function (){
-  projects.classList.remove('slidein')
-})
+// projectdiv.addEventListener('mouseout', function (){
+//   projects.classList.remove('slidein')
+// })
 
